@@ -71,7 +71,7 @@ const Header = () => {
 
       <div className="logo">
         <NavLink to="/">
-          <img src="public\MyLogo.png" alt="Event Logo" />
+          <img src="\MyLogo.png" alt="Event Logo" />
         </NavLink>
       </div>
       <div className="menu-icon" onClick={toggleMenu}>

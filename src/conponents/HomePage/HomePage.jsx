@@ -1,4 +1,3 @@
-import React from "react";
 import Header from "../Header/MainHeader/MainHeader";
 import CoursesCard from "./courses-card/CoursesCard";
 import "./HomePage.css"; // Importing the CSS file for styling
@@ -12,11 +11,7 @@ const HomePage = () => {
       <HomePopup />
 
       <div className="home-header">
-        <img
-          className="headerimg"
-          src="./public/Banner.png"
-          alt="Home header"
-        />
+        <img className="headerimg" src="/Banner.png" alt="Home header" />
         <div className="header-content">
           <h1>Hamza Consultancy</h1>
           <p className="header-paragraph">

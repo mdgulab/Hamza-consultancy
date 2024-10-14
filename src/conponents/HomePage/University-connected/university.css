@@ -1,0 +1,95 @@
+/* General page styling */
+.app-container {
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f8ff;
+}
+
+h1 {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color:#1093ff; /* Makes the text stand out */
+  /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); */
+  font-weight: bold;
+  text-align: center;}
+/* Cards container layout */
+.cards-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+/* Single card styling */
+.card {
+  background-color: #39a6ff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 300px;
+
+  padding: 10px;
+  text-align: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-image {
+  background-color: #ffffff;
+  align-content: center;
+  width: 120px;
+  height: 100px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-content h3 {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  color: #777;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+/* Button styling */
+.card-button {
+  background-color: #00796b;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card-button:hover {
+  background-color: #004d40;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+}

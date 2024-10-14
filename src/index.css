@@ -1,0 +1,23 @@
+.head1{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color:#1093ff; /* Makes the text stand out */
+  /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); */
+  font-weight: bold;
+  text-align: center;
+}
+.head2{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color:#1093ff; /* Makes the text stand out */
+  /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); */
+  font-weight: bold;
+  text-align: center;
+}
+.paragraph{
+ 
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: justify;
+  font-size: 1rem;
+  margin-left: 7%;
+  margin-right: 7%;
+  line-height: 1.6; /* Adjust line height for better readability */
+}

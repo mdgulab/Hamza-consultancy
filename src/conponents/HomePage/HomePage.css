@@ -1,0 +1,90 @@
+/* Home.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to top, #ffffff, #c6edfff6,#91dcfff6); /* Two-color gradient */
+}
+
+
+.home-container {
+  /* text-align: center; */
+  /* padding: 20px; */
+}
+/* home header */
+.home-header {
+  margin-top: 30px;
+  position: relative;
+  text-align: left;
+  /* border-bottom: 5px solid #00aefff6; */
+  
+}
+
+.headerimg {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  /* box-shadow: 5px 10px 15px 0px rgba(0, 0, 0, 0.897); */
+  
+
+}
+
+.header-content {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  transform: translate(-28%, -50%);
+  color: white; /* Makes the text stand out */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional, for better readability */
+}
+
+.header-content h1 {
+  font-size: 3.3rem;
+  margin: 0;
+}
+
+.header-paragraph{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ color: black;
+  background-color: yellow;
+  border-radius: 15px;
+  font-size: 1.3rem;
+  margin-top: 10px;
+  text-shadow: 2px 2px 4px rgba(221, 0, 0, 0); /* Optional, for better readability */
+}
+
+
+/* home services */
+
+
+
+
+.home-services {
+  margin-top: 10px;
+}
+
+.admission {
+  font-size: 2.5em;
+  color: #206eff;
+  margin-bottom: 20px;
+}
+
+.home-services ul {
+  list-style: none;
+  padding: 0;
+}
+
+.home-services li {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.home-footer {
+  background-color: #282c34;
+  color: white;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

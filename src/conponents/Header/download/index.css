@@ -1,0 +1,144 @@
+/* src/ContactForm.css */
+.ContactTop{
+  width: 100%;
+
+}
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  position: relative; /* Use relative instead of absolute */
+  z-index: 1; /* Works with relative position */
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  color:black;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  
+  padding: 8px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.contact-form textarea {
+  min-height: 100px;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #28a745;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.phone-input-container .form-container input {
+ 
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* Improved header styling */
+.ContactFormHead {
+  
+  background-image: url('https://www.grc.org/_resources/flash/homepage/presentation_slide.jpg');
+  
+  padding: 50px 20px;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 1; /* Lower z-index for the background */
+}
+
+/* New rule for separating blur effect on background */
+.ContactFormHead::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: inherit;
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px);
+  z-index: -1; /* Make sure the blur stays behind the content */
+  border-radius: 8px;
+}
+
+/* This part ensures that text is on top and not blurred */
+.ContactFormHead h1 {
+  position: relative;
+  z-index: 1;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .ContactFormHead {
+    padding: 30px 10px; /* Reduce padding on smaller screens */
+  }
+
+  .contact-form label {
+    font-size: 16px; /* Slightly smaller font size for labels */
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 14px; /* Smaller font size for inputs */
+  }
+
+  .contact-form button {
+    font-size: 16px; /* Smaller font size for button */
+  }
+
+  .contact-form button {
+    padding: 8px 15px; /* Smaller button padding */
+  }
+
+  .form-container {
+    padding: 15px; /* Reduce padding of the form container */
+  }
+}
+
+@media (max-width: 400px) {
+  .ContactFormHead {
+    padding: 20px 5px; /* Further reduce padding */
+  }
+
+  .contact-form label {
+    font-size: 14px; /* Further reduce font size for labels */
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 12px; /* Further reduce font size for inputs */
+  }
+
+  .contact-form button {
+    font-size: 14px; /* Further reduce font size for button */
+  }
+
+  .contact-form button {
+    padding: 6px 12px; /* Further reduce button padding */
+  }
+}

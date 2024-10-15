@@ -2,11 +2,11 @@
 .app-container {
   text-align: center;
   padding: 20px;
-  background-color: #f0f8ff;
+  background: linear-gradient(to bottom, #d5f2fff6, #fffffff6, #83d6fcf6);
 }
 
 h1 {
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family:serif;
   color:#1093ff; /* Makes the text stand out */
   /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); */
   font-weight: bold;
@@ -21,8 +21,8 @@ h1 {
 
 /* Single card styling */
 .card {
-  background-color: #39a6ff;
-  border: 1px solid #ddd;
+  background-color: #5cb4fc;
+  border: 1px solid #242424;
   border-radius: 10px;
   width: 300px;
 
@@ -56,19 +56,19 @@ h1 {
 
 .card-content h3 {
   font-size: 1.5rem;
-  color: #ffffff;
+  color: rgb(0, 93, 180);
   margin-bottom: 10px;
 }
 
 .card-content p {
-  color: #777;
+  color: #ffffff;
   font-size: 1rem;
   margin-bottom: 20px;
 }
 
 /* Button styling */
 .card-button {
-  background-color: #00796b;
+  background-color: #004fb6;
   color: white;
   padding: 10px 20px;
   margin: 10px;
@@ -79,7 +79,8 @@ h1 {
 }
 
 .card-button:hover {
-  background-color: #004d40;
+  background-color: #89d2fc;
+  color: #313131;
 }
 
 /* Responsive design for smaller screens */

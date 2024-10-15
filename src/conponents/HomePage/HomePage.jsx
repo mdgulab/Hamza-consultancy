@@ -14,23 +14,35 @@ const HomePage = () => {
       <div className="home-header">
         <img className="headerimg" src="/Banner.png" alt="Home header" />
         <div className="header-content">
-          <h1>Hamza Consultancy</h1>
+          <h1 className="headerh1">Hamza Consultancy</h1>
           <p className="header-paragraph">
-            Complete your education online with top universities, offering
-            flexibility anywhere.
+            Complete your education online with top universities, <br />
+            offering flexibility anywhere.
           </p>
+          <div className="imgcard">
+            <div className="imagecard1">
+              <img src="/amu_logo.jfif" alt="AMU Logo" />
+            </div>
+            <div className="imagecard1">
+              <img src="/Jamia_Hamdard_Logo.png" alt="Jamia Hamdard Logo" />
+            </div>
+            <div className="imagecard1">
+              <img
+                src="/Mizoram_University_logo.png"
+                width={"90px"}
+                alt="Mizoram University Logo"
+              />
+            </div>
+          </div>
         </div>
       </div>
       <div className="home-services">
         <h2 className="head1">Admission</h2>
         <p className="paragraph">
           Complete your education online with top universities, offering
-          flexibility and convenience to learn from anywhere. Whether you're
-          looking to enhance your skills or earn a degree, online programs
-          provide access to world-class resources and expert faculty, all from
-          the comfort of your home. Take control of your learning journey,
-          balance your studies with other commitments, and achieve your academic
-          goals with the support of leading educational institutions.
+          flexibility and convenience to learn from anywhere. Balance your
+          studies with other commitments and achieve your academic goals with
+          leading educational institutions.
         </p>
       </div>
       <CoursesCard />

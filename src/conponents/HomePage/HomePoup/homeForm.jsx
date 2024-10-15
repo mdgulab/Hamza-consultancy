@@ -53,7 +53,7 @@ const HomePopup = () => {
   return (
     <div className="popup-overlay">
       <div className="popup-content">
-        <h2>Fill out the form</h2>
+        <h2>Free Expert Consultation</h2>
         <form onSubmit={handleSubmit}>
           <div>
             <label htmlFor="name">Name:</label>

@@ -1,71 +1,77 @@
-/* Home.css */
-
+/* Global styles */
+*{
+  font-family: sans-serif;
+}
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to top, #ffffff, #c6edfff6,#91dcfff6); /* Two-color gradient */
+  background: linear-gradient(to top, #ffffff, #c6edfff6, #83d6fcf6); /* Gradient background */
 }
 
 
-.home-container {
-  /* text-align: center; */
-  /* padding: 20px; */
-}
-/* home header */
+
+/* Home header */
 .home-header {
-  margin-top: 30px;
+  margin-top: 50px;
   position: relative;
-  text-align: left;
-  /* border-bottom: 5px solid #00aefff6; */
-  
+  text-align: center;
 }
 
 .headerimg {
   width: 100%;
   height: auto;
   object-fit: cover;
-  /* box-shadow: 5px 10px 15px 0px rgba(0, 0, 0, 0.897); */
-  
+}
 
+.imgcard {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+
+}
+
+.imagecard1 img {
+  height: 90px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 2px 5px 1rem rgba(0, 0, 0, 0.3);
+  border: 1px solid rgb(0, 0, 0);
 }
 
 .header-content {
   position: absolute;
-  top: 30%;
-  left: 20%;
-  transform: translate(-28%, -50%);
-  color: white; /* Makes the text stand out */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional, for better readability */
+  top: 35%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-.header-content h1 {
-  font-size: 3.3rem;
+.headerh1 {
+  color: rgb(255, 255, 255);
+  font-size: 4.2rem;
   margin: 0;
 }
 
-.header-paragraph{
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
- color: black;
-  background-color: yellow;
-  border-radius: 15px;
+.header-paragraph {
+
+  color: black;
   font-size: 1.3rem;
   margin-top: 10px;
-  text-shadow: 2px 2px 4px rgba(221, 0, 0, 0); /* Optional, for better readability */
+  text-shadow: 2px 2px 4px rgba(221, 0, 0, 0);
 }
 
-
-/* home services */
-
-
-
-
+/* Home services */
 .home-services {
   margin-top: 10px;
+  text-align: center;
 }
 
 .admission {
-  font-size: 2.5em;
+  font-size: 2.5rem;
   color: #206eff;
   margin-bottom: 20px;
 }
@@ -76,7 +82,7 @@ body {
 }
 
 .home-services li {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   margin: 10px 0;
 }
 
@@ -87,4 +93,95 @@ body {
   position: fixed;
   bottom: 0;
   width: 100%;
+}
+
+/* Responsive design */
+
+/* Small devices (max-width: 600px) */
+@media (max-width: 600px) {
+  .header-content {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .headerh1 {
+    font-size: 2rem;
+  }
+
+  .header-paragraph {
+    font-size: 1.1rem;
+  }
+
+  .imgcard {
+    flex-direction: column;
+    gap: 10px;
+    max-height: auto;
+  }
+
+  .imagecard1 img {
+    height: 80px;
+  }
+}
+
+/* Medium devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .header-content {
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .headerh1 {
+    font-size: 3rem;
+  }
+
+  .header-paragraph {
+    font-size: 1.2rem;
+  }
+
+  .imgcard {
+    gap: 15px;
+  }
+
+  .imagecard1 img {
+    height: 90px;
+  }
+}
+
+/* Large devices (max-width: 992px) */
+@media (max-width: 992px) {
+  .header-content {
+    margin-top: rem;
+    left: 35%;
+    /* top: 100%; */
+    /* height: 100vh; */
+  }
+  .headerimg{
+ height: 25vh;
+  }
+
+  .headerh1 {
+    font-size: 2rem;
+    text-align: justify;
+    color: aliceblue;
+
+  }
+
+  .header-paragraph {
+    font-size: 1rem;
+    font-family:cursive;
+  }
+
+  .imagecard1 img {
+    height: 40px;
+    border: none;
+    
+  }
+  .imgcard {
+
+    flex-direction: row;
+    gap: 10px;
+    max-height: auto;
+}
 }

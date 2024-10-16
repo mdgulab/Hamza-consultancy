@@ -134,6 +134,7 @@
     padding: 0px;
     /* padding: 0 10px; */
     text-align: left;
+    padding: 10px;
     
     
   }
@@ -167,7 +168,7 @@
 .footer {
   background: linear-gradient(to right, #0054a3, #1ab3fa, #9ed0fff6); /* Gradient background */
   color: #000000;
-  padding:20px;
+  
 
 }
 .social-link {

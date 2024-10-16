@@ -1,4 +1,4 @@
-import "./feedback.css";
+import "./Feedback.css";
 
 const Feedbacks = () => {
   const feedbacks = [

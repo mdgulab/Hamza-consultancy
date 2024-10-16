@@ -87,6 +87,7 @@ h1 {
 @media (max-width: 768px) {
   .cards-container {
     flex-direction: column;
+    gap: 20px;
     align-items: center;
   }
 

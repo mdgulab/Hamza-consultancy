@@ -1,31 +1,32 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #f8f8f8;
+  background-color: #9ee3ff;
 }
 
 .container {
   text-align: center;
   padding: 20px;
+  position: relative; /* For positioning carousel buttons */
 }
-
-
 
 .programs {
   color: #000000;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  display: flex;
+  overflow: hidden; /* Hide overflowing cards */
+  scroll-behavior: smooth; /* Smooth scrolling effect */
   gap: 15px;
-  margin-top: 20px;
 }
 
 .program-card {
-  
-  background-color: white;
+  background: linear-gradient(to bottom, #ffffff, #008cff13, #fffffff6); /* Gradient background */;
+margin-top: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.199);
   padding: 20px;
+  min-width: 200px;
   transition: transform 0.2s;
+  border: 2px solid rgb(18, 129, 255);
 }
 
 .program-card:hover {
@@ -37,7 +38,7 @@ body {
   margin-top: 10px;
   padding: 10px 15px;
   color: white;
-  background-color: #1093ff;
+  background-color: #008cff;
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s;
@@ -45,4 +46,33 @@ body {
 
 .apply-button:hover {
   background-color: #008cff;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.carousel-button.left {
+  left: 0;
+}
+
+.carousel-button.right {
+  right: 0;
+}
+
+/* Responsive layout for mobile */
+@media (max-width: 768px) {
+  .programs {
+    grid-template-columns: 1fr;
+  }
+  .program-card{
+    width: 300px;
+  }
 }

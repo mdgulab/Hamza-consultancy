@@ -1,5 +1,7 @@
+import Footer from "../Footer/footer";
 import Header from "../Header/MainHeader/MainHeader";
 import CoursesCard from "./courses-card/CoursesCard";
+import Feedbacks from "./Feedback/Feekback";
 import "./HomePage.css"; // Importing the CSS file for styling
 import HomePopup from "./HomePoup/homeForm";
 import University from "./University-connected/university";
@@ -46,7 +48,11 @@ const HomePage = () => {
         </p>
       </div>
       <CoursesCard />
+      <CoursesCard />
+      <CoursesCard />
       <University />
+      <Feedbacks />
+      <Footer />
     </div>
   );
 };

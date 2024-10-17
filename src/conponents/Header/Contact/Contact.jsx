@@ -1,6 +1,7 @@
 import "./Contact.css"; // Ensure Contact.css has the correct styles
 // import Footer from "../../Footer/Footer";
 import Header from "../MainHeader/MainHeader";
+import Footer from "../../Footer/footer";
 
 const Contact = () => {
   return (
@@ -110,6 +111,7 @@ const Contact = () => {
           </form>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

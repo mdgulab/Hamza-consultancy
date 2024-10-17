@@ -3,18 +3,39 @@ import "./CoursesCard.css";
 
 const CoursesCard = () => {
   const programs = [
-    { name: "MBBS", link: "#" },
-    { name: "B.Tech", link: "#" },
-    { name: "Diploma", link: "#" },
-    { name: "M.Tech", link: "#" },
-    { name: "Polytechnic", link: "#" },
-    { name: "BDS", link: "#" },
-    { name: "B.Sc Nursing", link: "#" },
-    { name: "BAMS", link: "#" },
-    { name: "B.Pharma", link: "#" },
-    { name: "BPT", link: "#" },
-    { name: "BALLB", link: "#" },
-    { name: "MBA", link: "#" },
+    {
+      name: "Bachelor of Arts with Apprenticeship",
+      link: "#",
+      logo: "/amu_logo.jfif",
+    },
+    {
+      name: "BA - Economics with Internship",
+      link: "#",
+      logo: "/amu_logo.jfif",
+    },
+    { name: "BA - History with Internship", link: "#", logo: "/amu_logo.jfif" },
+    {
+      name: "BA - Political Science with Internship",
+      link: "#",
+      logo: "/amu_logo.jfif",
+    },
+    { name: "BA - Urdu with Internship", link: "#", logo: "/amu_logo.jfif" },
+    { name: "B.Com with Apprenticeship", link: "#", logo: "/amu_logo.jfif" },
+    { name: "MA with Apprenticeship", link: "#", logo: "/amu_logo.jfif" },
+    {
+      name: "MA - Economics with Inernship",
+      link: "#",
+      logo: "/amu_logo.jfif",
+    },
+    { name: "MA - Hindi with Inernship", link: "#", logo: "/amu_logo.jfif" },
+    { name: "MA - History with Internship", link: "#", logo: "/amu_logo.jfif" },
+    {
+      name: "MA - Political Science with Internship",
+      link: "#",
+      logo: "/amu_logo.jfif",
+    },
+    { name: "MA - Urdu with Internship", link: "#", logo: "/amu_logo.jfif" },
+    { name: "M.Com with Apprenticeship", link: "#", logo: "/amu_logo.jfif" },
   ];
 
   const carouselRef = useRef(null);
@@ -45,8 +66,13 @@ const CoursesCard = () => {
       <main className="programs" ref={carouselRef}>
         {programs.map((program, index) => (
           <div className="program-card" key={index}>
+            <img
+              src={program.logo}
+              alt="Program Logo"
+              className="program-logo"
+            />
             <h3 className="head2">{program.name}</h3>
-            <p className="paragraph">University of India</p>
+            <p className="paragraph1">Alighar Mushlim University</p>
             <a href={program.link} className="apply-button">
               Click to Apply
             </a>

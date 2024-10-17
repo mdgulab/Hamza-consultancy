@@ -1,0 +1,97 @@
+.location-app {
+  font-family: Arial, sans-serif;
+  padding-top: 20px;
+}
+
+.location-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+  flex-wrap: wrap; /* Allows sections to wrap on smaller screens */
+  background-color: #a1d5ff;
+}
+
+.location-info-section {
+  width: 65%;
+  height: 280px;
+  background-color: #c5efff;
+  padding: 12px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.863);
+  border-radius: 5px;
+}
+
+.location-section-title {
+  text-align: center;
+  background-color: #018dff;
+  color: white;
+  padding: 10px;
+  border-radius: 5px 5px 0 0;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.location-info-content {
+  color: #3b3b3b;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.location-map-section {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fffefe;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.438);
+}
+
+/* Media Queries for Responsiveness */
+
+/* Small devices (max-width: 600px) */
+@media (max-width: 600px) {
+  .location-container {
+    flex-direction: column;
+  }
+
+  .location-info-section, .location-map-section {
+    width: 100%; /* Full width for both sections */
+    margin-bottom: 20px; /* Space between stacked sections */
+  }
+
+  .location-section-title {
+    font-size: 18px;
+  }
+
+  .location-info-content {
+    font-size: 14px;
+  }
+}
+
+/* Medium devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .location-info-section {
+    width: 100%;
+  }
+
+  .location-map-section {
+    width: 100%; /* Map section takes full width */
+  }
+
+  .location-info-content {
+    font-size: 15px;
+  }
+}
+
+/* Large devices (max-width: 992px) */
+@media (max-width: 992px) {
+  .location-info-section {
+    width: 90%;
+  }
+
+  .location-map-section {
+    width: 90%;
+  }
+}

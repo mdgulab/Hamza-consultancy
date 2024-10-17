@@ -151,7 +151,7 @@ const Header = () => {
           </li>
           <li>
             <NavLink
-              to="/Guideline"
+              to="/AboutUs"
               className={({ isActive }) =>
                 isActive ? "nav active-link" : "nav"
               }

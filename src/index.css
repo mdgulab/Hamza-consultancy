@@ -21,3 +21,10 @@
   margin-right: 7%;
   line-height: 1.6; /* Adjust line height for better readability */
 }
+.paragraph1{
+ 
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  font-weight: 600;
+
+}

@@ -149,13 +149,13 @@
   .footer-link {
     font-size: 16px;
     font-weight: bold;
-    text-shadow:3px 1px 9px #00000070;
+    /* text-shadow:3px 1px 9px #00000070; */
   }
 
   .footer-description, .footer-contact {
     font-size: 17px;
     color: #f8f8f8;
-    text-shadow:3px 1px 9px #00000060;
+    /* text-shadow:3px 1px 9px #00000060; */
   }
 
   .footer-logo img {

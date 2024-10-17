@@ -1,13 +1,12 @@
 // import React from 'react';
 import Footer from "../../Footer/footer";
-import Contact from "../Contact/Contact";
 import Header from "../MainHeader/MainHeader";
 import "./About.css"; // Importing the CSS file
 import Loaction from "./location";
 
 const AboutUs = () => {
   return (
-    <div>
+    <div className="AboutMain">
       <Header />
       <div className="about-container">
         <h1 className="about-heading">About Hamza Consultancy</h1>

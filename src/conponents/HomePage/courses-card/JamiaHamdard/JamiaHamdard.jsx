@@ -5,77 +5,77 @@ const JamiaHamdard = () => {
   const programs = [
     {
       name: "Bachelor of Commerce",
-      link: "#",
+      link: "https://form.jotform.com/242913325946461",
       logo: "/Jamia_Hamdard_Logo.png",
     },
     {
       name: "Bachelor of Business Administration",
-      link: "#",
+      link: "https://form.jotform.com/242913325946461",
       logo: "/Jamia_Hamdard_Logo.png",
     },
     {
       name: "Batchelor of Computer Application",
-      link: "#",
+      link: "https://form.jotform.com/242913325946461",
       logo: "/Jamia_Hamdard_Logo.png",
     },
     {
       name: "Bachelor of Business Administration (BBA)",
-      link: "#",
+      link: "https://form.jotform.com/242913325946461",
       logo: "/Jamia_Hamdard_Logo.png",
     },
     {
       name: "Bachelor of Computer Applications(BCA)",
-      link: "#",
+      link: "https://form.jotform.com/242913325946461",
       logo: "/Jamia_Hamdard_Logo.png",
     },
     {
       name: "Master of Islamic Study",
-      link: "#",
+      link: "https://form.jotform.com/242913325946461",
       logo: "/Jamia_Hamdard_Logo.png",
     },
     {
       name: "Master of Busness Administration (MBA)",
-      link: "#",
+      link: "https://form.jotform.com/242913325946461",
       logo: "/Jamia_Hamdard_Logo.png",
     },
     {
       name: "Master of Computer Applications(MCA)",
-      link: "#",
+      link: "https://form.jotform.com/242913325946461",
       logo: "/Jamia_Hamdard_Logo.png",
     },
     {
       name: "MA - Political Science",
-      link: "#",
+      link: "https://form.jotform.com/242913325946461",
       logo: "/Jamia_Hamdard_Logo.png",
     },
     {
       name: "Certificate in Modern Persian Language (CMPL)",
-      link: "#",
+      link: "https://form.jotform.com/242913325946461",
       logo: "/Jamia_Hamdard_Logo.png",
     },
     {
       name: "Online Diplima in Professional Arbic (PDA)",
-      link: "#",
+      link: "https://form.jotform.com/242913325946461",
       logo: "/Jamia_Hamdard_Logo.png",
     },
     {
       name: "Online Diploma in Bakery and Confectioery Technology (DBCT)",
-      link: "#",
+      link: "https://form.jotform.com/242913325946461",
       logo: "/Jamia_Hamdard_Logo.png",
     },
     {
       name: "Advanced Diploma in Dietetics and Therapeuties Nutrition(ADDTN)",
-      link: "#",
+      link: "https://form.jotform.com/242913325946461",
       logo: "/Jamia_Hamdard_Logo.png",
     },
     {
       name: "Advanced Diploma in Drug Regulatory Affairs (ADDRA)",
-      link: "#",
+      link: "https://form.jotform.com/242913325946461",
       logo: "/Jamia_Hamdard_Logo.png",
     },
     {
       name: "Advanced Diploma in Medical Record Technology ",
-      link: "#",
+      link: "https://form.jotform.com/242913325946461",
       logo: "/Jamia_Hamdard_Logo.png",
     },
   ];

@@ -5,37 +5,69 @@ const CoursesCard = () => {
   const programs = [
     {
       name: "Bachelor of Arts with Apprenticeship",
-      link: "#",
+      link: "https://form.jotform.com/242913325946461",
       logo: "/amu_logo.jfif",
     },
     {
       name: "BA - Economics with Internship",
-      link: "#",
+      link: "https://form.jotform.com/242913325946461",
       logo: "/amu_logo.jfif",
     },
-    { name: "BA - History with Internship", link: "#", logo: "/amu_logo.jfif" },
+    {
+      name: "BA - History with Internship",
+      link: "https://form.jotform.com/242913325946461",
+      logo: "/amu_logo.jfif",
+    },
     {
       name: "BA - Political Science with Internship",
-      link: "#",
+      link: "https://form.jotform.com/242913325946461",
       logo: "/amu_logo.jfif",
     },
-    { name: "BA - Urdu with Internship", link: "#", logo: "/amu_logo.jfif" },
-    { name: "B.Com with Apprenticeship", link: "#", logo: "/amu_logo.jfif" },
-    { name: "MA with Apprenticeship", link: "#", logo: "/amu_logo.jfif" },
+    {
+      name: "BA - Urdu with Internship",
+      link: "https://form.jotform.com/242913325946461",
+      logo: "/amu_logo.jfif",
+    },
+    {
+      name: "B.Com with Apprenticeship",
+      link: "https://form.jotform.com/242913325946461",
+      logo: "/amu_logo.jfif",
+    },
+    {
+      name: "MA with Apprenticeship",
+      link: "https://form.jotform.com/242913325946461",
+      logo: "/amu_logo.jfif",
+    },
     {
       name: "MA - Economics with Inernship",
-      link: "#",
+      link: "https://form.jotform.com/242913325946461",
       logo: "/amu_logo.jfif",
     },
-    { name: "MA - Hindi with Inernship", link: "#", logo: "/amu_logo.jfif" },
-    { name: "MA - History with Internship", link: "#", logo: "/amu_logo.jfif" },
+    {
+      name: "MA - Hindi with Inernship",
+      link: "https://form.jotform.com/242913325946461",
+      logo: "/amu_logo.jfif",
+    },
+    {
+      name: "MA - History with Internship",
+      link: "https://form.jotform.com/242913325946461",
+      logo: "/amu_logo.jfif",
+    },
     {
       name: "MA - Political Science with Internship",
-      link: "#",
+      link: "https://form.jotform.com/242913325946461",
       logo: "/amu_logo.jfif",
     },
-    { name: "MA - Urdu with Internship", link: "#", logo: "/amu_logo.jfif" },
-    { name: "M.Com with Apprenticeship", link: "#", logo: "/amu_logo.jfif" },
+    {
+      name: "MA - Urdu with Internship",
+      link: "https://form.jotform.com/242913325946461",
+      logo: "/amu_logo.jfif",
+    },
+    {
+      name: "M.Com with Apprenticeship",
+      link: "https://form.jotform.com/242913325946461",
+      logo: "/amu_logo.jfif",
+    },
   ];
 
   const carouselRef = useRef(null);

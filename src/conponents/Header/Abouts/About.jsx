@@ -9,7 +9,7 @@ const AboutUs = () => {
       <Header />
       <div className="about-banner">
         <img
-          src="/public/Blue and Purple Social Media Specialist LinkedIn Article Cover Image (1).jpg"
+          src="/Blue and Purple Social Media Specialist LinkedIn Article Cover Image (1).jpg"
           alt="About Banner"
           className="about-banner-img"
         />
@@ -32,7 +32,7 @@ const AboutUs = () => {
           </div>
           <img
             className="about-image"
-            src="/public/about img.jpeg"
+            src="/about img.jpeg"
             alt="Hamza Consultancy"
           />
         </div>

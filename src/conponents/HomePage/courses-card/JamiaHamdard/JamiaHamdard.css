@@ -7,19 +7,19 @@ body {
 .course-container {
   text-align: center;
   padding: 20px;
-  position: relative; /* For positioning carousel buttons */
+  position: relative;
 }
 
 .course-programs {
-  /* color: #0080e9; */
   display: flex;
-  overflow: hidden; /* Hide overflowing cards */
-  scroll-behavior: smooth; /* Smooth scrolling effect */
+  overflow-x: auto; /* Enables horizontal scrolling */
   gap: 15px;
+  scroll-behavior: smooth; /* Smooth scrolling for touch events */
+  padding: 10px 0;
 }
 
 .course-program-card {
-  background: linear-gradient(to bottom, #ffc4c469, #ffffff, #028ac046); /* Gradient background */
+  background: linear-gradient(to bottom, #ffc4c469, #ffffff, #028ac046);
   margin-top: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.199);
@@ -29,16 +29,10 @@ body {
   border: 2px solid rgb(18, 129, 255);
 }
 
-.course-program-card:hover {
-  transform: translateY(-5px);
-}
-
-/* New styles for program logo */
 .course-program-logo {
-  width: 110px; /* Adjust width */
+  width: 110px;
   height: auto;
   border-radius: 2rem;
-  /* border: 2px solid rgb(44, 157, 250); */
 }
 
 .course-apply-button {
@@ -58,6 +52,11 @@ body {
   border: 1px solid #000000;
 }
 
+.course-head2 {
+  color: #008cff;
+}
+
+/* Carousel Buttons */
 .course-carousel-button {
   position: absolute;
   top: 50%;
@@ -67,6 +66,7 @@ body {
   border: none;
   padding: 10px;
   cursor: pointer;
+  z-index: 1;
 }
 
 .course-carousel-button.course-left {
@@ -76,15 +76,18 @@ body {
 .course-carousel-button.course-right {
   right: 0;
 }
-.course-head2{
-color:#008cff;
+
+/* Touch Scrolling Tweaks */
+.course-programs {
+  -webkit-overflow-scrolling: touch; /* Enables smooth touch scrolling on iOS */
 }
 
-/* Responsive layout for mobile */
+.course-program-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Responsive Layout for Smaller Screens */
 @media (max-width: 768px) {
-  .course-programs {
-    grid-template-columns: 1fr;
-  }
   .course-program-card {
     width: 300px;
   }

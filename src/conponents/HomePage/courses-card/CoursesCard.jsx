@@ -8,11 +8,13 @@ const CoursesCard = () => {
       link: "https://form.jotform.com/242913325946461",
       logo: "/amu_logo.jfif",
     },
+
     {
       name: "BA - Economics with Internship",
       link: "https://form.jotform.com/242913325946461",
       logo: "/amu_logo.jfif",
     },
+
     {
       name: "BA - History with Internship",
       link: "https://form.jotform.com/242913325946461",
@@ -28,6 +30,7 @@ const CoursesCard = () => {
       link: "https://form.jotform.com/242913325946461",
       logo: "/amu_logo.jfif",
     },
+
     {
       name: "B.Com with Apprenticeship",
       link: "https://form.jotform.com/242913325946461",

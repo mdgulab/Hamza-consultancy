@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useEffect, useState } from "react";
 import "./JamiaHamdard.css";
 
 const JamiaHamdard = () => {
@@ -81,11 +81,20 @@ const JamiaHamdard = () => {
   ];
 
   const carouselRef = useRef(null);
+  const cardRef = useRef(null);
+  const [cardWidth, setCardWidth] = useState(0);
+
+  useEffect(() => {
+    // Calculate the width of one card dynamically
+    if (cardRef.current) {
+      setCardWidth(cardRef.current.offsetWidth + 15); // Include gap between cards
+    }
+  }, []);
 
   const scrollLeft = () => {
     if (carouselRef.current) {
       carouselRef.current.scrollBy({
-        left: -200, // Scroll left by 200px
+        left: -cardWidth,
         behavior: "smooth",
       });
     }
@@ -94,7 +103,7 @@ const JamiaHamdard = () => {
   const scrollRight = () => {
     if (carouselRef.current) {
       carouselRef.current.scrollBy({
-        left: 200, // Scroll right by 200px
+        left: cardWidth,
         behavior: "smooth",
       });
     }
@@ -107,7 +116,11 @@ const JamiaHamdard = () => {
       </header>
       <main className="course-programs" ref={carouselRef}>
         {programs.map((program, index) => (
-          <div className="course-program-card" key={index}>
+          <div
+            className="course-program-card"
+            key={index}
+            ref={index === 0 ? cardRef : null} // Reference only the first card
+          >
             <img
               src={program.logo}
               alt="Program Logo"

@@ -11,33 +11,43 @@ body {
 }
 
 .programs {
-  color: #009940;
   display: flex;
-  overflow: hidden; /* Hide overflowing cards */
+  overflow-x: auto; /* Enables horizontal scrolling */
   scroll-behavior: smooth; /* Smooth scrolling effect */
   gap: 15px;
+  padding: 10px;
+  scrollbar-width: thin; /* Firefox scrollbar */
+}
+
+.programs::-webkit-scrollbar {
+  height: 8px;
+}
+
+.programs::-webkit-scrollbar-thumb {
+  background: #008cff;
+  border-radius: 4px;
 }
 
 .program-card {
+  flex: 0 0 auto; /* Prevents shrinking */
   background: linear-gradient(to bottom, #ffffff, #bfffe144, #00f87c46); /* Gradient background */
   margin-top: 20px;
   border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.199);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   padding: 20px;
   min-width: 230px;
-  transition: transform 0.2s;
+  transition: transform 0.2s ease-in-out;
   border: 2px solid rgb(18, 129, 255);
 }
 
 .program-card:hover {
-  transform: translateY(-1px);
+  transform: translateY(-5px); /* Elevates card slightly */
 }
 
-/* New styles for program logo */
 .program-logo {
   width: 110px; /* Adjust width */
   height: auto;
-  /* margin-bottom: 0px; */
+  margin-bottom: 10px;
   border-radius: 2rem;
   border: 2px solid rgb(44, 157, 250);
 }
@@ -50,7 +60,7 @@ body {
   background-color: #008cff;
   text-decoration: none;
   border-radius: 5px;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .apply-button:hover {
@@ -68,24 +78,47 @@ body {
   border: none;
   padding: 10px;
   cursor: pointer;
+  z-index: 10; /* Ensures buttons are above content */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
 }
 
 .carousel-button.left {
-  left: 0;
+  left: 10px;
 }
 
 .carousel-button.right {
-  right: 0;
+  right: 10px;
+}
+
+.carousel-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Responsive layout for mobile */
 @media (max-width: 768px) {
   .programs {
-    grid-template-columns: 2fr;
+    gap: 10px;
   }
+
   .program-card {
-    width: auto;
-    height: 300px;
-    gap: 20px;
+    min-width: 200px; /* Smaller cards for narrow screens */
+    padding: 15px;
+  }
+
+  .program-logo {
+    width: 90px; /* Reduce size on smaller screens */
+  }
+
+  .apply-button {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+
+  .carousel-button {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
   }
 }

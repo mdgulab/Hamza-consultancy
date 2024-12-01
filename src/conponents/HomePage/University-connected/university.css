@@ -2,56 +2,63 @@
 .app-container {
   text-align: center;
   padding: 20px;
-  background: linear-gradient(to bottom, #d5f2fff6, #fffffff6, #83d6fcf6);
+  background: linear-gradient(to bottom, #d5f2ff, #ffffff, #83d6fc); /* Subtle gradient */
 }
 
 h1 {
-  font-family:serif;
-  color:#1093ff; /* Makes the text stand out */
-  /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); */
+  font-family: serif;
+  color: #1093ff; /* Bold heading color */
   font-weight: bold;
-  text-align: center;}
+  text-align: center;
+  margin-bottom: 30px;
+}
+
 /* Cards container layout */
 .cards-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 20px; /* Even spacing between cards */
   flex-wrap: wrap;
   padding: 20px;
 }
 
 /* Single card styling */
 .card {
-  background-color: #5cb4fc;
+  background: linear-gradient(to bottom, #5cb4fc, #ffffff); /* Gradient card background */
   border: 1px solid #242424;
+  /* color:black; */
   border-radius: 10px;
-  width: 300px;
-
-  padding: 10px;
+  width: 280px;
+  padding: 20px;
   text-align: center;
-  align-items: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-10px); /* Emphasized hover effect */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .card-image {
-  background-color: #ffffff;
-  align-content: center;
-  width: 120px;
+  width: 100px;
   height: 100px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  margin-bottom: 15px;
+  border-radius: 50%; /* Circular images for a modern look */
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .card-content {
-  padding: 15px;
+  text-align: center;
+  padding: 10px 0;
 }
 
 .card-content h3 {
@@ -61,9 +68,9 @@ h1 {
 }
 
 .card-content p {
-  color: #ffffff;
+  color: #000000;
   font-size: 1rem;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 /* Button styling */
@@ -71,16 +78,18 @@ h1 {
   background-color: #004fb6;
   color: white;
   padding: 10px 20px;
-  margin: 10px;
+  margin-top: 10px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .card-button:hover {
   background-color: #89d2fc;
   color: #313131;
+  transform: scale(1.05); /* Button grows slightly on hover */
 }
 
 /* Responsive design for smaller screens */
@@ -93,5 +102,24 @@ h1 {
 
   .card {
     width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .card-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .card-content p {
+    font-size: 0.9rem;
+  }
+
+  .card-button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
   }
 }

@@ -176,7 +176,7 @@ const Header = () => {
           <img
             className="Whatsapp"
             alt="Chat on WhatsApp"
-            src="/public/WhatsApp_icon.png.webp"
+            src="WhatsApp_icon.png.webp"
           />
         </a>
       </div>

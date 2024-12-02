@@ -22,30 +22,30 @@ const Footer = () => {
           <h3 className="footer-title">USEFUL LINKS</h3>
           <ul className="footer-links">
             <li>
-              <a href="/HomePage" className="footer-link">
+              <Link to="/HomePage" className="footer-link">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/AboutUs" className="footer-link">
+              <Link to="/AboutUs" className="footer-link">
                 About Us
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/Services" className="footer-link">
+              <Link to="/Services" className="footer-link">
                 Services
-              </a>
+              </Link>
             </li>
 
             <li>
-              <a href="/Contact" className="footer-link">
+              <Link to="/Contact" className="footer-link">
                 Contact Us
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/Travelvisa" className="footer-link">
+              <Link to="/#" className="footer-link">
                 Upcomming..
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

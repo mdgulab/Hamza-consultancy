@@ -171,7 +171,7 @@ const Header = () => {
             <button className="button-2">Register</button>
           </a>
         </div>
-        <a href="https://wa.me/9102129391">
+        <a href="https://wa.me/7322822761">
           {" "}
           <img
             className="Whatsapp"

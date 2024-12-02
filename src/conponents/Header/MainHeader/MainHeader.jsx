@@ -8,6 +8,7 @@ import { MdAttachEmail } from "react-icons/md";
 import { FaInstagramSquare, FaWhatsapp } from "react-icons/fa";
 import { FaFacebookSquare } from "react-icons/fa";
 import { IoLogoYoutube } from "react-icons/io5";
+import Services from "../Services/Services";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -161,7 +162,7 @@ const Header = () => {
           </li>
           <li>
             <NavLink
-              to="/Venue"
+              to="/Services"
               className={({ isActive }) =>
                 isActive ? "nav active-link" : "nav"
               }
@@ -181,9 +182,9 @@ const Header = () => {
           </li>
         </ul>
         <div className="nav-register-button">
-          <Link to="/register">
+          <a href="https://forms.office.com/r/aeJc7rRSqx">
             <button className="button-2">Register</button>
-          </Link>
+          </a>
         </div>
       </div>
     </nav>

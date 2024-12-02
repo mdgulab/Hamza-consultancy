@@ -21,8 +21,8 @@
 
 .feedbacks-list {
   display: flex;
-  animation: marquee 20s linear infinite;
-  gap: 15px; /* Space between cards */
+  animation: marquee 25s linear infinite;
+  gap: 20px; /* Space between cards */
   will-change: transform; /* Optimizes animation performance */
 }
 
@@ -42,14 +42,14 @@
 }
 
 .feedback-card:hover {
-  transform: translateY(-5px) scale(2.05); /* Slight scale effect for interactivity */
+  transform: translateY(-10px) scale(1.00); /* Slight scale effect for interactivity */
 }
 
 .feedback-card h4 {
   font-weight: bold;
   font-size: 1.1rem;
   color: #333;
-  margin-top: 10px;
+  margin-top: 1px;
 }
 
 .feedback-card .university {

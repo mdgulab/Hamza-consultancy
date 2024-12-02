@@ -1,5 +1,6 @@
 // src/components/Footer.jsx
 
+import { Link } from "react-router-dom";
 import "./footer.css";
 
 const Footer = () => {
@@ -26,39 +27,33 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="/ConfrencesPage" className="footer-link">
-                Conferences
+              <a href="/AboutUs" className="footer-link">
+                About Us
               </a>
             </li>
             <li>
-              <a href="/Guideline" className="footer-link">
-                Guidelines
+              <a href="/Services" className="footer-link">
+                Services
               </a>
             </li>
-            <li>
-              <a href="/Venue" className="footer-link">
-                Venue
-              </a>
-            </li>
+
             <li>
               <a href="/Contact" className="footer-link">
-                Contact
+                Contact Us
               </a>
             </li>
             <li>
               <a href="/Travelvisa" className="footer-link">
-                Travel Visa
+                Upcomming..
               </a>
             </li>
           </ul>
         </div>
         <div className="footer-section">
           <h3 className="footer-title">CONTACT INFO</h3>
-          <p className="footer-contact">Phone: +1 630 768 1199</p>
-          <p className="footer-contact">Email: support@stripeconferences.com</p>
-          <p className="footer-contact">
-            Address: 16192 Coastal Highway, Lewes, Delaware, USA 19958
-          </p>
+          <p className="footer-contact">Phone: +91-9102129391</p>
+          <p className="footer-contact">Email: info@hamzaconsultancy.in</p>
+          <p className="footer-contact">Sarswa, Motihari,Bihar,India-845401</p>
         </div>
       </div>
       <div className="footer-bottom">
@@ -98,6 +93,9 @@ const Footer = () => {
               {" "}
               Instagram
             </a>
+            <Link className="social-link" to="https://wa.me/7322822761">
+              | Whatsapp
+            </Link>
           </p>
         </center>
       </div>

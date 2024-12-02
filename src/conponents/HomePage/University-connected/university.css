@@ -4,7 +4,6 @@
   padding: 20px;
   background: linear-gradient(to bottom, #d5f2ff, #ffffff, #83d6fc); /* Subtle gradient */
 }
-
 h1 {
   font-family: serif;
   color: #1093ff; /* Bold heading color */
@@ -12,7 +11,6 @@ h1 {
   text-align: center;
   margin-bottom: 30px;
 }
-
 /* Cards container layout */
 .cards-container {
   display: flex;
@@ -55,7 +53,6 @@ h1 {
   align-items: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
-
 .card-content {
   text-align: center;
   padding: 10px 0;
@@ -99,25 +96,20 @@ h1 {
     gap: 20px;
     align-items: center;
   }
-
   .card {
     width: 90%;
   }
 }
-
 @media (max-width: 480px) {
   h1 {
     font-size: 1.8rem;
   }
-
   .card-content h3 {
     font-size: 1.2rem;
   }
-
   .card-content p {
     font-size: 0.9rem;
   }
-
   .card-button {
     padding: 8px 16px;
     font-size: 0.9rem;

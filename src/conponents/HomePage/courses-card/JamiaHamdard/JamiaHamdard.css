@@ -14,7 +14,7 @@ body {
   display: flex;
   overflow-x: auto; /* Enables horizontal scrolling */
   gap: 15px;
-  scroll-behavior: smooth; /* Smooth scrolling for touch events */
+  scroll-behavior:inherit; /* Smooth scrolling for touch events */
   padding: 10px 0;
 }
 

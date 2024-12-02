@@ -22,6 +22,22 @@ font-size:17px ;
 margin-top: 4px;
 margin-right: 10px;
 }
+.Whatsapp{
+height: 60px;
+/* width: 40px; */
+/* padding: 10px; */
+margin-top: 480px;
+margin-left: 290px;
+position: fixed;
+transition: height 0.3s ease; /* Smooth transition effect */
+transform: translateX(-20%); /* Start the image off-screen to the left */
+  transition: transform 0.9s ease; 
+}
+.Whatsapp:hover{
+  height: 66px;
+  color: #008dce;
+  transform: translateX(0);
+}
 .element{
   margin-right: 50px;
 }
@@ -259,7 +275,20 @@ transform: none;
       background-color: #effbff;
   }
 
+  .Whatsapp{
+    height: 60px;
+    /* width: 40px; */
+    /* padding: 10px; */
+    margin-top: 650px;
+    margin-left: 300px;
+    /* position: fixed; */
 
+    
+    }
+    .Whatsapp:hover{
+      height:66px;
+      transform: none;
+    }
 
 
   .menu-icon {

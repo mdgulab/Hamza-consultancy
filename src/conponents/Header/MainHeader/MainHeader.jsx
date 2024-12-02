@@ -41,15 +41,15 @@ const Header = () => {
           <span className="element"></span>
           <span className="element">
             <FaPhone />
-            +91 7631170395
+            +91-9102129391
           </span>
           <span className="element">|</span>
           <span className="element">
-            <MdAttachEmail /> mdgulabcs@gmail.com
+            <MdAttachEmail /> info@hamzaconsultancy.in
           </span>
           <span className="element">|</span>
           <span className="element">
-            <FaWhatsapp /> 7632170395
+            <FaWhatsapp /> +91-9102129391
           </span>
 
           <span className="element-media">
@@ -132,21 +132,6 @@ const Header = () => {
                     updating
                   </NavLink>
                 </li>
-                <li>
-                  <NavLink className="dropdown-nav" to="/Infectious">
-                    updating
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink className="dropdown-nav" to="/Genomics">
-                    updating
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink className="dropdown-nav" to="/Devlopment">
-                    updating
-                  </NavLink>
-                </li>
               </ul>
             )}
           </li>
@@ -186,6 +171,14 @@ const Header = () => {
             <button className="button-2">Register</button>
           </a>
         </div>
+        <a href="https://wa.me/9102129391">
+          {" "}
+          <img
+            className="Whatsapp"
+            alt="Chat on WhatsApp"
+            src="/public/WhatsApp_icon.png.webp"
+          />
+        </a>
       </div>
     </nav>
   );

@@ -21,20 +21,20 @@ const Contact = () => {
             <span className="icon">🎤</span>
             <h3 className="contH2">Address</h3>
             <p className="Contact-sub-heading">
-              500032 Darbhanga , bihar india
+              Sarswa, Motihari,Bihar,India-845401
             </p>
           </div>
 
           <div className="contact-item">
             <span className="icon">🎓</span>
             <h3 className="contH2">Phone number</h3>
-            <p className="Contact-sub-heading">+91 7631170395</p>
+            <p className="Contact-sub-heading">+91-9102129391</p>
           </div>
 
           <div className="contact-item">
             <span className="icon">📧</span>
             <h3 className="contH2">E-mail address</h3>
-            <p className="Contact-sub-heading">support@hamza.com</p>
+            <p className="Contact-sub-heading">info@hamzaconsultancy.in</p>
           </div>
         </div>
       </div>
@@ -46,8 +46,10 @@ const Contact = () => {
         <div className="map-container">
           <iframe
             title="map"
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d49774.98918017952!2d-75.211706!3d38.765153!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b8b9ee12ce8257%3A0x3122963d2d6d3bc5!2s16192%20Coastal%20Hwy%2C%20Lewes%2C%20DE%2019958!5e0!3m2!1sen!2sus!4v1727777652092!5m2!1sen!2sus"
-          ></iframe>
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57062.14837691107!2d84.9202742!3d26.636176199999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399334f786408169%3A0x94579e553aba3627!2sMotihari%2C%20Bihar!5e0!3m2!1sen!2sin!4v1733135670819!5m2!1sen!2sin"
+          >
+            {" "}
+          </iframe>
         </div>
 
         {/* Contact form */}

@@ -53,6 +53,9 @@ const HomePopup = () => {
   return (
     <div className="popup-overlay">
       <div className="popup-content">
+        <button className="close-btn" onClick={() => setIsOpen(false)}>
+          Close
+        </button>
         <h2>Free Expert Consultation</h2>
         <form onSubmit={handleSubmit}>
           <div>
@@ -117,18 +120,15 @@ const HomePopup = () => {
               required
             >
               <option value="">Select a course</option>
-              <option value="course1">Course 1</option>
-              <option value="course2">Course 2</option>
-              <option value="course3">Course 3</option>
+              <option value="course1">AMU</option>
+              <option value="course2">Mizoram University</option>
+              <option value="course3">Jamia Hamdard</option>
             </select>
             {errors.course && <p className="error">{errors.course}</p>}
           </div>
 
           <button type="submit">Submit</button>
         </form>
-        <button className="close-btn" onClick={() => setIsOpen(false)}>
-          Close
-        </button>
       </div>
     </div>
   );

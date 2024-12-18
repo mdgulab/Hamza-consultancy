@@ -11,6 +11,7 @@ body {
 }
 
 .programs {
+  
   display: flex;
   overflow-x: auto; /* Enables horizontal scrolling */
   scroll-behavior: smooth; /* Smooth scrolling effect */

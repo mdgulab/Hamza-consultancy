@@ -31,18 +31,7 @@ const Services = () => {
         "Assistance in identifying and applying for scholarships to help students achieve their dreams with minimal financial burden.",
       icon: <FaHandHoldingUsd />,
     },
-    {
-      title: "Visa Assistance",
-      description:
-        "Streamlined support for student visa applications, ensuring all documentation and procedures are handled efficiently.",
-      icon: <FaPassport />,
-    },
-    {
-      title: "Test Preparation",
-      description:
-        "Resources and coaching for standard tests such as IELTS, TOEFL, GRE, and SAT, equipping students for academic success.",
-      icon: <FaBook />,
-    },
+
     {
       title: "Post-Admission Support",
       description:

@@ -18,10 +18,11 @@
   padding-left: 36px;
   border-radius: 10px;
   max-width: 400px;
-  width: 60%;
+  width: 50%;
+  height: 92%;
   text-align: left;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  border: 2px solid #000000;
+  border: 5px solid #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: center; /* Center form elements */
@@ -83,6 +84,7 @@ button[type="submit"] {
   background-color: #00796b;
   color: white;
   margin-top: 10px;
+  border: 1px solid #ffffff;
 }
 
 button[type="submit"]:hover {
@@ -90,13 +92,19 @@ button[type="submit"]:hover {
 }
 
 .close-btn {
-  background-color: #f44336;
+  background-color: #ff1100;
   color: white;
-  margin-top: 10px;
+  text-align: right;
+  margin-left: 300px;
+  padding-left:10px;
+  width: 80px;
+  border: 1px solid #ffffff;
+
+
 }
 
 .close-btn:hover {
-  background-color: #d32f2f;
+  background-color: #070000;
 }
 
 .error {

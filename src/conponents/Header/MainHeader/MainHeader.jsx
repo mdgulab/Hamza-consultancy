@@ -53,19 +53,26 @@ const Header = () => {
           </span>
 
           <span className="element-media">
-            <FaInstagramSquare />
+            <Link to="https://www.instagram.com/aftabakhtar7?igsh=Zjc3ZzhmbjhxaDg=">
+              <FaInstagramSquare />
+            </Link>
           </span>
           <span className="element-media"></span>
           <span className="element-media">
-            <FaFacebookSquare />
+            <Link to="https://www.facebook.com/profile.php?id=61559974225558">
+              <FaFacebookSquare />
+            </Link>
           </span>
           <span className="element-media"></span>
           <span className="element-media">
             <FaLinkedin />
           </span>
           <span className="element-media"></span>
+
           <span className="element-media">
-            <IoLogoYoutube />
+            <Link to="www.youtube.com">
+              <IoLogoYoutube />
+            </Link>
           </span>
         </div>
       </div>

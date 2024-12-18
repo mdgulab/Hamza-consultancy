@@ -117,7 +117,7 @@ button[type="submit"]:hover {
 /* Responsive Media Query */
 @media (max-width: 600px) {
   .popup-content {
-    max-width: 90%; /* Adjust width for smaller screens */
+    max-width: 100%; /* Adjust width for smaller screens */
     padding: 20px; /* Reduce padding */
   }
 
@@ -127,11 +127,20 @@ button[type="submit"]:hover {
 
   .popup-content input,
   .popup-content select,
-  button[type="submit"],
+  button[type="submit"]
+{
+  font-size: 14px; /* Reduce input and button font size */
+  padding: 8px; /* Reduce padding for inputs and buttons */
+}
   .close-btn {
     font-size: 14px; /* Reduce input and button font size */
     padding: 8px; /* Reduce padding for inputs and buttons */
+    width:40%;
+    margin-left: 110px;
+    padding-left: 40px;
+    text-align: right;
   }
+
 
   button[type="submit"],
   .close-btn {

@@ -8,7 +8,6 @@ import { MdAttachEmail } from "react-icons/md";
 import { FaInstagramSquare, FaWhatsapp } from "react-icons/fa";
 import { FaFacebookSquare } from "react-icons/fa";
 import { IoLogoYoutube } from "react-icons/io5";
-import Services from "../Services/Services";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -163,14 +162,14 @@ const Header = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink
+            <Link
               to="/Contact"
               className={({ isActive }) =>
                 isActive ? "nav active-link" : "nav"
               }
             >
               Contact Us
-            </NavLink>
+            </Link>
           </li>
         </ul>
         <div className="nav-register-button">
